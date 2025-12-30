@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield, Cpu, Cloud, ArrowRight, Lock } from "lucide-react";
+import { Shield, Cpu, Cloud, ArrowRight, Lock, Layers, BarChart3, Database } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ClientsSection } from "@/components/sections/ClientsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { NSCPlatform } from "@/components/sections/NSCPlatform";
 
 export default function Home() {
   return (
@@ -90,35 +91,38 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-24 grid w-full max-w-5xl grid-cols-1 gap-8 sm:grid-cols-3"
         >
-          {/* Card 1: AI & Sandbox */}
+          {/* Card 1: NSC Core Platform */}
           <div className="relative group overflow-hidden rounded-2xl border border-border bg-card/50 p-8 text-left backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)]">
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-              <Shield className="h-6 w-6" />
+              <Layers className="h-6 w-6" />
             </div>
-            <h3 className="mb-2 text-xl font-bold text-foreground">Secure AI Sandbox</h3>
-            <p className="text-muted-foreground">Entornos aislados para experimentar con IA sin comprometer datos sensibles ni compliance.</p>
+            <h3 className="mb-2 text-xl font-bold text-foreground">NSC Platform Core</h3>
+            <p className="text-muted-foreground">La base modular para seguros embebidos y modernización de sistemas legacy de alta disponibilidad.</p>
           </div>
 
-          {/* Card 2: Microservices */}
+          {/* Card 2: Observability & AI */}
           <div className="relative group overflow-hidden rounded-2xl border border-border bg-card/50 p-8 text-left backdrop-blur-sm transition-all hover:border-secondary/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]">
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/20 text-secondary group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors">
-              <Cloud className="h-6 w-6" />
+              <BarChart3 className="h-6 w-6" />
             </div>
-            <h3 className="mb-2 text-xl font-bold text-foreground">Cloud & Microservicios</h3>
-            <p className="text-muted-foreground">Arquitecturas distribuidas, escalables y resilientes para el core de negocio moderno.</p>
+            <h3 className="mb-2 text-xl font-bold text-foreground">Observabilidad & IA</h3>
+            <p className="text-muted-foreground">Visibilidad total de sistemas complejos y automatización inteligente con enfoque en seguridad de datos.</p>
           </div>
 
-          {/* Card 3: RFID & IOT */}
+          {/* Card 3: Data Science & Cleaning */}
           <div className="relative group overflow-hidden rounded-2xl border border-border bg-card/50 p-8 text-left backdrop-blur-sm transition-all hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)]">
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-purple-500/20 text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-colors">
-              <Cpu className="h-6 w-6" />
+              <Database className="h-6 w-6" />
             </div>
-            <h3 className="mb-2 text-xl font-bold text-foreground">RFID & IoT Control</h3>
-            <p className="text-muted-foreground">Trazabilidad física en tiempo real integrada a tus sistemas digitales de gestión.</p>
+            <h3 className="mb-2 text-xl font-bold text-foreground">Data Science & Precision</h3>
+            <p className="text-muted-foreground">Transformamos datos corrompidos en inteligencia de negocio lista para actuar y predecir.</p>
           </div>
 
         </motion.div>
       </main>
+
+      {/* NSC PLATFORM SECTION */}
+      <NSCPlatform />
 
       {/* CLIENTS SECTION */}
       <ClientsSection />

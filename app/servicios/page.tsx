@@ -25,18 +25,18 @@ export default function ServicesPage() {
             icon: ScanFace,
         },
         {
-            title: "Data Engineering & Analytics",
-            desc: "Pipelines de datos robustos. Transformamos datos crudos de múltiples fuentes en insights actuariales y comerciales listos para usar.",
+            title: "Data Science & Precision Cleaning",
+            desc: "Pipelines de datos de grado industrial. Limpieza de datos legados, detección de anomalías y modelos predictivos para optimización de siniestralidad.",
             icon: Database,
         },
         {
-            title: "End-User Computing (EUC)",
-            desc: "Empoderamos a las áreas de negocio construyendo herramientas tácticas seguras que IT no tiene ancho de banda para desarrollar.",
+            title: "Observabilidad 360°",
+            desc: "Monitorización profunda de microservicios y procesos críticos. No solo logs, sino visibilidad total de la salud y rendimiento de tu negocio.",
             icon: BarChart3,
         },
         {
-            title: "IA Generativa Aplicada",
-            desc: "Chatbots de atención, análisis de siniestros y extracción automática de datos (OCR) implementados bajo protocolos de seguridad.",
+            title: "IA Generativa & OCR Seguro",
+            desc: "Extracción automática de datos de pólizas y análisis de siniestros mediante agentes de IA aislados dentro de nuestro Sandbox seguro.",
             icon: Cpu,
         },
     ];
