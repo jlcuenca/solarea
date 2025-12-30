@@ -14,7 +14,7 @@ export const Footer = () => {
                     <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center gap-2 mb-4 relative h-12 w-48">
                             <Image
-                                src="/branding/imago_tipo_area_alfa.png"
+                                src="/branding/logo_alfa_sa.png"
                                 alt="Soluciones Area"
                                 fill
                                 className="object-contain object-left"

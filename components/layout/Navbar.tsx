@@ -39,10 +39,10 @@ export const Navbar = () => {
                     <Link href="/" className="flex items-center gap-2 group">
                         <div className="relative h-12 w-48 transition-transform group-hover:scale-105">
                             <Image
-                                src="/branding/imago_tipo_area_alfa.png"
-                                alt="Soluciones Area Logo"
+                                src="/branding/logo_alfa_sa.png"
+                                alt="Soluciones Area"
                                 fill
-                                className="object-contain"
+                                className="object-contain object-left"
                                 priority
                             />
                         </div>
